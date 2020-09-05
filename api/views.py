@@ -1,3 +1,6 @@
+"""
+Contains the views for the `api` application.
+"""
 import uuid
 from rest_framework import (
     permissions,

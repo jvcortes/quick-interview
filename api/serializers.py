@@ -1,3 +1,6 @@
+"""
+Contains the serializers.
+"""
 from rest_framework import serializers, validators
 from api import models
 
