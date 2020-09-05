@@ -13,28 +13,28 @@ REST API made in Django with Django REST Framework using DRF's APIView class.
 
 * Clone this repository
 ```console
-git clone https://www.github.com/jvcortes/quick-interview
+$ git clone https://www.github.com/jvcortes/quick-interview
 ```
 
 * Create a virtual environment inside the project's folder
 ```console
-cd quick-interview
-python3 -m venv .
+$ cd quick-interview
+$ python3 -m venv .
 ```
 
 * Install dependencies from `requirements.txt`
 ```console
-python3 -m pip install -r requirements.txt
+$ python3 -m pip install -r requirements.txt
 ```
 
 * Make migrations and migrate
 ```console
-python3 manage.py makemigrations && python3 manage.py migrate
+$ python3 manage.py makemigrations && python3 manage.py migrate
 ```
 
 * Start the development server
 ```console
-python3 manage.py runserver
+$ python3 manage.py runserver
 ```
 
 ## Content
@@ -61,5 +61,3 @@ To access these endpoints, an `Authorization` header with a `Bearer <access_toke
 * `/api/v1/clients/import/` (PUT): CSV import for `Client` instances creation through multipart file upload.
 * `/api/v1/products/` (all methods): CRUD operations for products, see `api/models.py`, `Product` class for more details
 * `/api/v1/bills/` (all methods): CRUD operations for client bills, see `api/models.py`, `Bill` class for more details
-
-
