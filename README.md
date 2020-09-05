@@ -49,10 +49,10 @@ The application contains the following endpoints:
 	* `email`: user email
 	* `password`: user password
 	* `document`: user identification document
-* `/api/token/` (POST): See user's current access JWT and long duration JWT:
+* `/api/token/` (POST): Shows user's current access JWT and long duration JWT:
 	* `email`: user email
 	* `password`: user password
-* `/api/token/refresh` (POST): Get access token through user's long duration JWT
+* `/api/token/refresh` (POST): Shows access token through user's long duration JWT:
 	* `email`: user email
 	* `password`: user password
 	* `refresh`: user long duration JWT
