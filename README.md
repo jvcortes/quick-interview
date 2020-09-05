@@ -63,6 +63,14 @@ To access these endpoints, an `Authorization` header with a `Bearer <access_toke
 
 * `/api/v1/clients/` (all methods): CRUD operations for clients, see `api/models.py`, `Client` class for more details
 * `/api/v1/clients/as_csv` (GET): CSV export for all `Client` instances.
+    Example of exporting a CSV list of clients with `curl`:
+    ```console
+    $ curl -X GET  http://localhost:8000/api/v1/clients/as_csv -H 'Authorization: Bearer <access_token>' -H 'Accept: text/csv'
+    ```
 * `/api/v1/clients/import` (PUT): CSV import for `Client` instances creation through multipart file upload.
+    Example of importing a CSV list of clients with `curl`:
+    ```console
+    $ curl -X PUT -F data=@example.csv http://localhost:8000/api/v1/clients/import -H 'Authorization: Bearer <access_token>'
+    ```
 * `/api/v1/products/` (all methods): CRUD operations for products, see `api/models.py`, `Product` class for more details
 * `/api/v1/bills/` (all methods): CRUD operations for client bills, see `api/models.py`, `Bill` class for more details
