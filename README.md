@@ -62,7 +62,7 @@ The application contains the following endpoints:
 To access these endpoints, an `Authorization` header with a `Bearer <access_token>` value is required.
 
 * `/api/v1/clients/` (all methods): CRUD operations for clients, see `api/models.py`, `Client` class for more details
-* `/api/v1/clients/as_csv/` (GET): CSV export for all `Client` instances.
-* `/api/v1/clients/import/` (PUT): CSV import for `Client` instances creation through multipart file upload.
+* `/api/v1/clients/as_csv` (GET): CSV export for all `Client` instances.
+* `/api/v1/clients/import` (PUT): CSV import for `Client` instances creation through multipart file upload.
 * `/api/v1/products/` (all methods): CRUD operations for products, see `api/models.py`, `Product` class for more details
 * `/api/v1/bills/` (all methods): CRUD operations for client bills, see `api/models.py`, `Bill` class for more details
