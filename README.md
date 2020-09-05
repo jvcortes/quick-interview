@@ -19,7 +19,12 @@ $ git clone https://www.github.com/jvcortes/quick-interview
 * Create a virtual environment inside the project's folder
 ```console
 $ cd quick-interview
-$ python3 -m venv .
+$ python3 -m venv env
+```
+
+* Activate the virtual environment
+```console
+$ source env/bin/activate
 ```
 
 * Install dependencies from `requirements.txt`
