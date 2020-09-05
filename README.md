@@ -37,7 +37,7 @@ $ python3 -m pip install -r requirements.txt
 $ python3 manage.py makemigrations && python3 manage.py migrate
 ```
 
-* Start the development server
+* Start the development server, the development server will start at localhost:8000
 ```console
 $ python3 manage.py runserver
 ```
